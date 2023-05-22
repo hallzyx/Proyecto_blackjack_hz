@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(4, 98, 4);
+}
+
+header{
+    text-align: center;
+    background-color: black;
+    color:white;
+    padding: 25px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(4, 98, 4);
+}
+
+.botones button{
+    padding: 15px 20px;
+    margin: 10px 10px;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+
+.botones button:nth-child(1){
+    background-color: rgb(168, 33, 33);
+}
+.botones button:nth-child(2),
+.botones button:nth-child(3){
+    background-color: rgb(43, 33, 119);
+}
+
+main{
+    font-family: arial;
+    
+    color: white;
+}
+
+main .jugador_box,
+main .pc_box{
+    padding: 20px;
+}
+
+main div h2{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+main img{
+    height: 200px;
+}
+main div h2 small{
+    color:yellow;
+}
+
+
+.box_1{
+    position: relative;
+    height: 220px;
+}
+.box_2{
+    position: relative;
+    height: 220px;
+}
+
+
+
+.box_1 > img {
+    position: absolute;
+    
+
+}
+.box_2 > img {
+    position: absolute;
+    
+}
+.box_1 > img:not(:first-child){
+    left: 50px;
+}
+
+.box_2 > img:not(:first-child){
+    left: 50px;
+}
